@@ -1,0 +1,217 @@
+.jsjs-sec1 {
+    position: relative;
+}
+
+.jsjs-sec1 .aki-hezhao {
+    position: relative;
+    z-index: 2;
+}
+
+.jsjs-sec1 .aki-hezhao img.thumb {
+    width: 100%;
+    height: auto;
+}
+
+.jsjs-sec1 .swiper_small {
+    background: black;
+    position: relative;
+    z-index: 2;
+    margin-top: -0.10vw;
+}
+
+
+.jsjs-sec1 .swiper_small .aki-qhan {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    z-index: 10;
+}
+
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-prev,
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-next {
+    display: block;
+    width: 4.17vw;
+    height: 3.02vw;
+    transition: all 0.3s ease;
+    background: url(../images/qhan1.png) no-repeat 0 0/100% 100%;
+    cursor: pointer;
+}
+
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-prev::after,
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-next::after {
+    display: none;
+}
+
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-prev {
+    left: -2.08vw;
+}
+
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-next {
+    transform: rotate(180deg);
+    right: -2.08vw;
+}
+
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-prev:hover,
+.jsjs-sec1 .swiper_small .aki-qhan .swiper-button-next:hover {
+    background-image: url(../images/qhan2.png);
+}
+
+
+
+.jsjs-sec1 .swiper_small .item {
+    position: relative;
+    width: 100%;
+    height: 27.10vw;
+    background: url(../images/jsjs-sec1-smallbg.png) 0 0/100% 100%;
+    cursor: pointer;
+}
+
+.jsjs-sec1 .swiper_small .item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    transition: all 0.3s ease;
+}
+
+.jsjs-sec1 .swiper_small .swiper-slide-active .item::before {
+    opacity: 0;
+}
+
+.jsjs-sec1 .swiper_small .item .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20.74vw;
+}
+
+.jsjs-sec1 .swiper_small .item .img img {
+    width: 17.46vw;
+    height: auto;
+}
+
+.jsjs-sec1 .swiper_small .item .txt {
+    padding: 1.88vw 1.88vw 0;
+}
+
+.jsjs-sec1 .swiper_small .item .txt h3 {
+    font-size: 1.15vw;
+    color: white;
+}
+
+.jsjs-sec1 .swiper_small .item .txt p {
+    font-size: 0.78vw;
+    color: #a4a4a4;
+    margin-top: 0.42vw;
+}
+
+
+.jsjs-sec2 {
+    position: relative;
+    z-index: 2;
+    padding: 4.95vw 0;
+    min-height: 37.26vw;
+}
+
+.jsjs-sec2 img.jsjs-sec2-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.jsjs-sec2 .item-all {
+    position: relative;
+    z-index: 2;
+    margin: 4.95vw auto 0;
+    width: 44.29vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.41vw;
+}
+
+.jsjs-sec2 .item-all .item {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 15.48vw;
+    margin: 0 -2.50vw 1.56vw 0;
+    background: url(../images/item-more.png) 0 0/100% 100%;
+}
+
+.jsjs-sec2 .item-all .item:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.jsjs-sec2 .item-all .item img{
+    width: 100%;
+}
+
+.jsjs-sec2 .item-all .item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1.88vw;
+    z-index: -1;
+    width: 11.72vw;
+    height: 13.03vw;
+    background-color: #fbfe00;
+    transform: skewX(16deg) scale(1.2);
+    border-top-right-radius: 0.94vw;
+    border-bottom-left-radius: 0.94vw;
+    opacity: 0;
+    transition: all 0.15s ease;
+}
+
+.jsjs-sec2 .item-all .item:hover:before {
+    opacity: 1;
+}
+
+.jsjs-sec2 .item .layer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 12.45vw;
+    height: 2.40vw;
+    padding: 0 2.08vw;
+    font-size: 1.04vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background: url(../images/jsjs-sec2-item-bg.png) 0 0/100% 100%;
+}
+
+.jsjs-sec2 .item.jjkq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #323232;
+    font-style: italic;
+    text-align: center;
+    pointer-events: none;
+    padding-bottom: 2.34vw;
+    padding-right: 1.56vw;
+}
+
+.jsjs-sec2 .item.jjkq .en {
+    font-size: 2.08vw;
+    text-transform: uppercase;
+}
+
+.jsjs-sec2 .item.jjkq .cn {
+    font-size: 1.04vw;
+    margin-top: 0.42vw;
+}

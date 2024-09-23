@@ -1,0 +1,263 @@
+.page-xwzx {
+    position: relative;
+    padding-bottom: 6.25vw;
+}
+
+
+.xwzx-sec1 {
+    padding-top: 6.25vw;
+    margin-left: 25.01vw;
+    overflow: hidden;
+}
+
+.xwzx-sec1 .b-title {
+    text-align: right;
+    font-size: 6.04vw;
+    color: #dfdfdf;
+    font-style: italic;
+    line-height: 0.84;
+    padding-right: 1.82vw;
+    text-transform: uppercase;
+}
+
+.xwzx-sec1 .akiswiper {
+    margin-top: 4.95vw;
+    width: 100vw;
+}
+
+.xwzx-sec1 .akiswiper .swiper-slide {
+    width: 26.84vw;
+    margin-right: 2.92vw;
+}
+
+.xwzx-sec1 .akiswiper a.item {
+    display: block;
+    width: 100%;
+    border-radius: 0 2.08vw 0 2.08vw;
+    overflow: hidden;
+}
+
+.xwzx-sec1 .akiswiper a.item img {
+    width: 100%;
+    height: 14.33vw;
+    object-fit: cover;
+}
+
+.xwzx-sec1 .swiper-pagination {
+    position: static !important;
+    margin: 1.56vw 0 0 1.82vw !important;
+    width: auto !important;
+    display: flex;
+    align-items: center;
+}
+
+.xwzx-sec1 .swiper-pagination span {
+    display: block;
+    width: 0.78vw;
+    height: 0.78vw;
+    margin: 0 0.83vw 0 0 !important;
+    background: #323333;
+    border: 0.16vw solid var(--themeColor2);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.xwzx-sec1 .swiper-pagination span.swiper-pagination-bullet-active {
+    border-color: #323333;
+    background: var(--themeColor);
+}
+
+
+.xwzx-sec2 {
+    margin: 5.73vw 0 0 25.01vw;
+}
+
+.xwzx-sec2 .cate {
+    display: inline-flex;
+    padding: 0 0.78vw;
+    height: 2.50vw;
+    align-items: center;
+    background: #222122;
+    border-radius: 1.30vw;
+    color: white;
+    font-size: 0.89vw;
+    font-weight: 800;
+}
+
+.xwzx-sec2 .cate a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    width: 7.62vw;
+    height: 100%;
+}
+
+.xwzx-sec2 .cate a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 5.21vw;
+    height: 1.77vw;
+    background: url(../images/lengxing.png) no-repeat 0 0 / 100% 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.xwzx-sec2 .cate a:hover,
+.xwzx-sec2 .cate a.active {
+    color: black;
+}
+
+.xwzx-sec2 .cate a:hover:after,
+.xwzx-sec2 .cate a.active::after {
+    opacity: 1;
+}
+
+.xwzx-sec2 .item-all {
+    display: flex;
+    gap: 1.72vw;
+    flex-wrap: wrap;
+    margin-top: 4.27vw;
+    width: 50.03vw;
+}
+
+.xwzx-sec2 .item-all a.item {
+    display: block;
+    width: calc(33.33% - 1.15vw);
+    margin-bottom: 1.56vw;
+}
+
+.xwzx-sec2 a.item .img {
+    border-radius: 0 1.30vw 0 1.30vw;
+    overflow: hidden;
+}
+
+.xwzx-sec2 a.item .img img {
+    width: 100%;
+    height: 8.60vw;
+    object-fit: cover;
+}
+
+.xwzx-sec2 a.item:hover .img img {
+    transform: scale(1.15);
+}
+
+.xwzx-sec2 a.item .time {
+    display: flex;
+    margin-top: 1.30vw;
+    font-size: 0.83vw;
+}
+
+.xwzx-sec2 a.item .time .news-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.77vw;
+    height: 0.78vw;
+    margin-left: 0.78vw;
+    color: var(--themeColor);
+    font-size: 0.57vw;
+    background: url(../images/news-tag.png) no-repeat 0 0 / 100% 100%;
+}
+
+.xwzx-sec2 a.item .title {
+    font-size: 0.94vw;
+    font-weight: 800;
+    margin-top: 1.30vw;
+}
+
+.xwzx-sec2 a.item .desc {
+    margin-top: 0.63vw;
+    font-size: 0.70vw;
+    line-height: 0.94vw;
+    color: #666;
+}
+
+
+.xwzx-sec2 .pager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.34vw;
+    width: 50.03vw;
+}
+
+
+.xwzx-sec2 .pager .box {
+    display: flex;
+    height: 2.08vw;
+    align-items: center;
+    background: #222122;
+    border-radius: 1.04vw;
+    color: white;
+    font-size: 0.78vw;
+    font-weight: bold;
+}
+
+.xwzx-sec2 .pager .box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    width: 2.50vw;
+    height: 100%;
+    margin: 0 0.21vw;
+}
+
+.xwzx-sec2 .pager .box a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 2.50vw;
+    height: 1.25vw;
+    background: url(../images/lengxing2.png) no-repeat 0 0 / 100% 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.xwzx-sec2 .pager .box a:hover,
+.xwzx-sec2 .pager .box a.active {
+    color: black;
+}
+
+.xwzx-sec2 .pager .box a.num:hover:after,
+.xwzx-sec2 .pager .box a.num.active::after {
+    opacity: 1;
+}
+
+.xwzx-sec2 .pager .box a.prev,
+.xwzx-sec2 .pager .box a.next {
+    padding: 0.26vw;
+    width: auto;
+}
+
+.xwzx-sec2 .pager .box a.prev:hover,
+.xwzx-sec2 .pager .box a.next:hover {
+    transform: scale(1.1);
+}
+
+.xwzx-sec2 .pager .box a img {
+    width: 2.50vw;
+    height: 1.56vw;
+}
+
+.xwzx-sec2 .pager .box a.prev {
+    margin: 0 0.52vw 0 0;
+}
+
+.xwzx-sec2 .pager .box a.next {
+    margin: 0 0 0 0.52vw;
+}
+
+.xwzx-sec2 .pager .box a.next img {
+    transform: rotate(180deg);
+}

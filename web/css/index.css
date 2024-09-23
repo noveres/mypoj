@@ -1,0 +1,753 @@
+.index-banner {
+    position: relative;
+}
+
+.index-banner .banner-zs-left {
+    position: absolute;
+    left: 0;
+    top: 7.03vw;
+    width: 56.33vw;
+}
+
+.index-banner .banner-zs-right {
+    position: absolute;
+    right: 6.10vw;
+    top: -1.56vw;
+    width: 6.41vw;
+}
+
+.index-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.index-banner img.banner {
+    width: 100%;
+    height: auto;
+}
+
+.index-banner a.ljxz {
+    display: block;
+    position: absolute;
+    top: 1.67vw;
+    right: 3.13vw;
+    width: 17.30vw;
+}
+
+.index-banner a.ljxz img {
+    width: 100%;
+    height: auto;
+}
+
+.index-banner a.ljxz:hover img {
+    animation: tada .8s ease-in forwards;
+}
+
+
+@keyframes tada {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.1) rotate(3deg);
+    }
+
+    40%,
+    60% {
+        transform: scale(1.1) rotate(-2deg);
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1) rotate(3deg);
+    }
+
+    80%,
+    100% {
+        transform: scale(1.1) rotate(0);
+    }
+}
+
+.index-banner .b-title {
+    position: absolute;
+    left: 3.65vw;
+    top: 16.15vw;
+}
+
+.index-banner .b-title .img1 {
+    width: 2.92vw;
+}
+
+.index-banner .b-title .img2 {
+    width: 0.63vw;
+    margin: 2.08vw 0 0 0.26vw;
+}
+
+
+.index-banner .app-down {
+    position: absolute;
+    bottom: 16.68vw;
+    right: 2.61vw;
+    /* width: 15.63vw; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.52vw;
+}
+
+.index-banner .app-down a.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 0.26vw);
+    height: 1.98vw;
+    background: var(--themeColor2);
+    border-radius: 0.42vw;
+    overflow: hidden;
+}
+
+.index-banner .app-down .desc {
+    font-size: 0.63vw;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/*個人簡介*/
+.layout {
+    align-items: center;
+    margin-top: 14.85vw;
+    width: 100%;
+    height: 30.74vw;
+
+    display: flex;
+    gap: 16px;
+}
+
+.grow1 {
+    /* background: #fa0606; */
+    flex-grow: 0.2;
+    overflow: hidden;
+    max-height: 30.74vw;
+
+
+
+}
+
+.grow1 img {
+    flex: shrink 0;
+    height: 30.74vw;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 100px;
+
+
+}
+
+.grow2 {
+    /* background: #4702c9; */
+    flex-grow: 1;
+    height: 30.74vw;
+    width: 45vw;
+}
+
+.index-content-title {
+    margin-top: 8vw;
+    margin-left: 2VW;
+}
+
+.index-content-title h1 {
+    font-size: 3vw;
+
+}
+
+
+/* __________________________________________ */
+/* 首页新闻资讯 */
+.index-news {
+    margin-top: 14.85vw;
+    position: relative;
+    z-index: 3;
+}
+
+.index-news .container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.index-news .news-left {
+    width: 36.74vw;
+    margin: 4.43vw 3.65vw 0 6.77vw;
+}
+
+.index-news .news-left .akiswiper {
+    border-radius: 2.08vw;
+}
+
+.index-news .news-left .akiswiper img {
+    width: 100%;
+    height: 20.84vw;
+    object-fit: cover;
+}
+
+.index-news .news-left .akiswiper a {
+    display: block;
+    position: relative;
+}
+
+.index-news .news-left .akiswiper .layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.50vw;
+    background: black;
+    font-size: 1.56vw;
+    color: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+.index-news .news-left .akiswiper .layer .desc {
+    transform: translateX(36.71vw);
+}
+
+.index-news .news-left .akiswiper .layer .desc.active {
+    animation: wordsLoop 20s linear infinite;
+}
+
+@keyframes wordsLoop {
+    0% {
+        transform: translateX(36.71vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.index-news .news-left .akiswiper .hidden-time,
+.index-news .news-left .akiswiper .hidden-title {
+    display: none;
+}
+
+.index-news .news-left .news-aki-time {
+    margin-top: 1.56vw;
+    font-size: 0.94vw;
+    padding-left: 0.78vw;
+}
+
+.index-news .news-left .news-aki-title {
+    margin: 0.26vw 0 1.25vw;
+    font-size: 0.94vw;
+    padding-left: 0.78vw;
+}
+
+.index-news .news-left .fyq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index-news .news-left .fyq .swiper-pagination {
+    position: static !important;
+    margin: 0 !important;
+    width: auto !important;
+    padding-left: 0.78vw;
+    display: flex;
+    align-items: center;
+}
+
+/* 輪播圖的點點 */
+.index-news .news-left .fyq .swiper-pagination span {
+    display: block;
+    width: 1.20vw;
+    height: 1.20vw;
+    margin: 0 1.25vw 0 0 !important;
+    background: #323333;
+    border: 0.26vw solid var(--themeColor2);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.index-news .news-left .fyq .swiper-pagination span.swiper-pagination-bullet-active {
+    border-color: #323333;
+    background: var(--themeColor);
+}
+
+
+/* 首页游戏特色板块 */
+.index-game {
+    padding-top: 4.69vw;
+    position: relative;
+    margin-top: 1.56vw;
+}
+
+.index-game .index-game-zs-right {
+    position: absolute;
+    top: -19.02vw;
+    right: 0;
+    width: 37vw;
+}
+
+.index-game .index-game-zs-right .img1 {
+    position: absolute;
+    top: -4.30vw;
+    left: -10.94vw;
+    width: 48.46vw;
+    max-width: none;
+}
+
+.index-game .index-game-zs-right .img2 {
+    width: 100%;
+}
+
+.index-game .main-bg {
+    position: absolute;
+    top: 4.69vw;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.index-game .main-bg img {
+    width: 100%;
+    height: auto;
+}
+
+.index-game .game-main {
+    position: relative;
+    z-index: 2;
+    height: 42.31vw;
+}
+
+.index-game .index-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 33.04vw;
+    height: 30.75vw;
+    background: url(../images/index-title-bg.png) no-repeat 0 0/100% 100%;
+}
+
+.index-game .akiswiper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 80.67vw;
+    height: auto;
+    background: url(../images/index-game-bg2.png) no-repeat 0 0/100% 100%;
+}
+
+.index-game .akiswiper a {
+    display: block;
+    position: relative;
+}
+
+.index-game .akiswiper img.thumb {
+    width: 100%;
+    height: auto;
+}
+
+.index-game .akiswiper a img.bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+
+.index-game .akiswiper a .layer {
+    position: absolute;
+    left: 0;
+    bottom: 2.29vw;
+    z-index: 3;
+    width: 100%;
+    height: 6.77vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4.69vw;
+    font-size: 3.54vw;
+    color: var(--themeColor);
+}
+
+.index-game .akiswiper .swiper-button-prev::after,
+.index-game .akiswiper .swiper-button-next::after {
+    display: none;
+}
+
+.index-game .akiswiper .swiper-button-prev,
+.index-game .akiswiper .swiper-button-next {
+    height: auto !important;
+    width: auto !important;
+}
+
+.index-game .akiswiper .swiper-button-prev img,
+.index-game .akiswiper .swiper-button-next img {
+    height: 2.87vw;
+    width: auto;
+    opacity: 0.6;
+}
+
+.index-game .akiswiper .swiper-button-prev:hover img,
+.index-game .akiswiper .swiper-button-next:hover img {
+    opacity: 1;
+}
+
+.index-game .akiswiper .swiper-button-prev {
+    left: 14.59vw;
+}
+
+.index-game .akiswiper .swiper-button-next {
+    transform: rotate(180deg);
+    right: 16.68vw;
+}
+
+
+.index-game .game-qh-btn {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+    margin: 1.56vw 4.69vw 0 0;
+}
+
+.index-game .game-qh-btn .qh-box {
+    width: auto;
+    height: 3.02vw;
+    background: #767678;
+    border-radius: 1.56vw;
+    display: flex;
+    align-items: center;
+    padding: 0.31vw;
+}
+
+.index-game .game-qh-btn .qh-box .aki-prev,
+.index-game .game-qh-btn .qh-box .aki-next {
+    display: block;
+    position: static !important;
+    margin: 0 !important;
+    width: 3.28vw;
+    height: 100%;
+    transition: all 0.3s ease;
+    background: url(../images/game-qh-btn1.png) no-repeat 0 0/100% 100%;
+    cursor: pointer;
+}
+
+.index-game .game-qh-btn .qh-box .aki-next {
+    transform: rotate(180deg);
+}
+
+.index-game .game-qh-btn .qh-box .aki-prev:hover,
+.index-game .game-qh-btn .qh-box .aki-next:hover {
+    background-image: url(../images/game-qh-btn2.png);
+}
+
+
+/* 首页设定档案板块 */
+.index-files {
+    margin-top: 10.42vw;
+    position: relative;
+    z-index: 10;
+    /* padding-bottom: 8.60vw; */
+}
+
+.index-files .container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.index-files .files-left {
+    width: 36.74vw;
+    margin: 4.43vw 3.65vw 0 6.77vw;
+}
+
+.index-files .files-left .akiswiper {
+    border-radius: 1.25vw;
+}
+
+.index-files .files-left .akiswiper img.thumb {
+    width: 100%;
+    height: 20.84vw;
+    object-fit: cover;
+}
+
+.index-files .files-left .akiswiper a {
+    display: block;
+    position: relative;
+}
+
+
+.index-files .files-left .akiswiper .swiper-button-prev::after,
+.index-files .files-left .akiswiper .swiper-button-next::after {
+    display: none;
+}
+
+.index-files .files-left .akiswiper .swiper-button-prev,
+.index-files .files-left .akiswiper .swiper-button-next {
+    height: auto !important;
+    width: auto !important;
+}
+
+.index-files .files-left .akiswiper .swiper-button-prev img,
+.index-files .files-left .akiswiper .swiper-button-next img {
+    height: 2.87vw;
+    width: auto;
+    opacity: 0.6;
+}
+
+.index-files .files-left .akiswiper .swiper-button-prev:hover img,
+.index-files .files-left .akiswiper .swiper-button-next:hover img {
+    opacity: 1;
+}
+
+.index-files .files-left .akiswiper .swiper-button-prev {
+    left: 1.67vw;
+}
+
+.index-files .files-left .akiswiper .swiper-button-next {
+    transform: rotate(180deg);
+    right: 1.67vw;
+}
+
+.index-files .gnz {
+    position: absolute;
+    right: 0;
+    bottom: 4.43vw;
+}
+
+.index-files .gnz>img.bg {
+    width: auto;
+    height: 9.28vw;
+}
+
+.index-files .gnz a.icon {
+    display: block;
+    position: absolute;
+    bottom: -1.56vw;
+    left: 6.88vw;
+}
+
+.index-files .gnz a.icon img {
+    height: 3.13vw;
+    width: auto;
+}
+
+.index-files .gnz .b-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12.51vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    color: black;
+}
+
+.index-files .gnz .b-title h3 {
+    font-size: 1.77vw;
+}
+
+.index-files .gnz .b-title h5 {
+    margin-top: 0.21vw;
+    font-size: 0.63vw;
+}
+
+.index-files .gnz .tv {
+    position: absolute;
+    left: -6.77vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.index-files .gnz .tv img.tv-bg {
+    width: 12.51vw;
+}
+
+.index-files .gnz .tv .content {
+    position: absolute;
+    left: 0.68vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.index-files .gnz .tv .content img.img1 {
+    width: 8.34vw;
+    height: auto;
+}
+
+.index-files .gnz .tv .content img.img2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 2.71vw;
+}
+
+
+/* 设置.shell元素为相对定位，flex布局，水平和垂直居中对齐，宽度和高度为100%，盒模型为border-box，背景颜色为rgba(99, 99, 99, 0.8) */
+.shell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* background: rgba(99, 99, 99, 0.8); */
+}
+
+/* 设置.button元素为flex布局，两端对齐，宽度为380px，绝对定位，左侧偏移量为50%，水平居中，底部偏移量为-80px */
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 33vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+
+}
+
+/* 设置.prev和.next元素过渡动画时间为0.25秒，层级为99999，底部偏移量为5px */
+.prev,
+.next {
+    transition: transform 0.25s ease;
+    z-index: 99999;
+    bottom: 5px;
+}
+
+/* 设置.prev和.next元素中的i元素字体大小为90px，颜色为#fff，光标为指针，文字阴影为0 0 10px #ffffff */
+.prev i,
+.next i {
+
+    font-size: 1800vw;
+    /* background-color: rgba(102, 123, 161, 0.288); */
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+/* 设置.shell_body元素宽度为100%，缩放为0.8倍，上内边距为20px，下内边距为150px */
+.shell_body {
+
+    transform: scale(.8);
+    padding: 0 0 5vw 0;
+}
+
+/* 设置.shell_slider元素为相对定位，过渡动画时间为1秒，背景为透明 */
+.shell_slider {
+    position: relative;
+    transition: transform 1s ease-in-out;
+    background: transparent;
+}
+
+/* 设置.item元素为相对定位，左浮动，左右外边距为20px */
+.item {
+    position: relative;
+    float: left;
+    margin: 0 20px;
+}
+
+/* 设置寬高.frame元素为相对定位，宽度和高度为100%，过渡动画时间为1秒，3D变换模式为保留3D效果 */
+.frame {
+    float: left;
+    position: relative;
+    left: 50.2vw;
+    /* 负值会将元素向左移动 */
+    width: 16.2VW;
+    height: 24vw;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+/* 设置.frame元素的伪元素为绝对定位，底部偏移量为-16%，宽度为100%，高度为60px，背景颜色为#ffffff1c，盒阴影为0px 0px 15px 5px #ffffff1c，3D变换为绕X轴旋转90度并向上平移20px */
+.frame:after {
+    content: "";
+    position: absolute;
+    bottom: -16%;
+    width: 100%;
+    height: 5vw;
+    background: #ffffff1c;
+    box-shadow: 0px 0px 15px 5px #ffffff1c;
+    transform: rotateX(90deg) translate3d(0px, -20px, 0px);
+}
+
+/* 设置.box元素为flex布局，纵向排列，水平和垂直居中对齐，绝对定位，宽度和高度为100%，边框为4px实心白色，透视效果为1000px，3D变换模式为保留3D效果 */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    /* perspective: 1000px; */
+    transform-style: preserve-3d;
+}
+
+/* 设置.box元素中的h1和span元素颜色为#fff，Z轴平移距离为20px */
+.box h1,
+.box span {
+    color: #fff;
+    transform: translateZ(20px);
+    font-size: 1vw;
+}
+
+/* 设置.box元素中的h1元素文字阴影为0 0 30px #1f05b4，字体大小为100px */
+.box h1 {
+    text-shadow: 0 0 30px #1f05b4;
+    font-size: 3VW;
+}
+
+/* 设置.box元素中的span元素为绝对定位，底部偏移量为20px，左右内边距为25px，文字阴影为0 0 10px #1f05b4 */
+.box span {
+    position: absolute;
+    bottom: 20px;
+    padding: 0 25px;
+    /* text-shadow: 0 0 10px #1f05b4; */
+}
+
+/* 设置.front、.left和.right元素的盒阴影为0 0 50px #ffffff，背景图大小为cover */
+.front,
+.left,
+.right {
+    box-shadow: 0 0 50px #ffffff;
+    background-size: cover;
+}
+
+/* 设置.left和.right元素的顶部偏移量为0，宽度为60px，背面不可见 */
+.right,
+.left {
+    top: 0;
+    width: 60px;
+    backface-visibility: hidden;
+}
+
+/* 设置.left元素的左侧偏移量为0，左边框宽度为5px，3D变换为向右平移1px，Z轴平移-60px，绕Y轴逆时针旋转90度，变换原点为左侧 */
+.left {
+    left: 0;
+    border-left-width: 5px;
+    transform: translate3d(1px, 0, -60px) rotateY(-90deg);
+    transform-origin: 0%;
+}
+
+/* 设置.right元素的右侧偏移量为0，右边框宽度为5px，3D变换为向左平移1px，Z轴平移-60px，绕Y轴顺时针旋转90度，变换原点为右侧 */
+.right {
+    right: 0;
+    border-right-width: 5px;
+    transform: translate3d(-1px, 0, -60px) rotateY(90deg);
+    transform-origin: 100%;
+}

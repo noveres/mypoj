@@ -1,0 +1,426 @@
+.page-jsxq {
+    background: url(../images/page-jsxq-bg.png) no-repeat top right/auto 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.aki-jsxq {
+    width: 100%;
+    height: 44.55vw;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.aki-jsxq .section-top {
+    position: absolute;
+    top: 0;
+    left: -23.87vw;
+    width: 38.77vw;
+    height: 27.62vw;
+    transform: rotate(-180deg);
+}
+
+.aki-jsxq .section-top .block-1 {
+    content: "";
+    position: absolute;
+    left: 2.34vw;
+    bottom: -1.82vw;
+    z-index: 2;
+    width: 38.77vw;
+    height: 19.70vw;
+    background: #000;
+    border-radius: 0.52vw;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2.34vw;
+    transform: skewX(-42deg) scale(1.1, 1.3) rotateX(5deg);
+    transform-origin: bottom right;
+}
+
+.aki-jsxq .section-foot {
+    position: absolute;
+    right: -33.22vw;
+    bottom: 11.46vw;
+    width: 38.73vw;
+    height: 27.67vw;
+    overflow: hidden;
+}
+
+.aki-jsxq .section-foot .block-1 {
+    position: absolute;
+    left: 2.34vw;
+    bottom: 2.11vw;
+    z-index: 2;
+    width: 38.73vw;
+    height: 19.70vw;
+    background: #000;
+    border-radius: 0.47vw;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2.34vw;
+    transform: skewX(-42deg) scale(1.1, 1.3) rotateX(5deg);
+    transform-origin: bottom right;
+}
+
+.aki-jsxq .section-foot .block-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.93vw;
+    border-bottom-left-radius: 2.66vw;
+    background: #000;
+}
+
+.aki-jsxq .js-detail {
+    position: relative;
+    z-index: 5;
+    padding-top: 4.17vw;
+    margin-left: 13.03vw;
+    width: 29.44vw;
+}
+
+.aki-jsxq .js-detail .js-name {
+    font-size: 2.71vw;
+}
+
+.aki-jsxq .js-cv {
+    margin-top: 1.25vw;
+    display: flex;
+    align-items: center;
+}
+
+.aki-jsxq .js-cv .js-cv-btn {
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.78vw;
+    cursor: pointer;
+}
+
+.aki-jsxq .js-cv .js-cv-btn.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--themeColor);
+    animation: voice 500ms ease-in-out infinite alternate;
+}
+
+@keyframes voice {
+    0% {
+        transform: translateY(97%);
+        opacity: .35;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.aki-jsxq .js-cv .js-cv-btn img {
+    width: 2.34vw;
+}
+
+.aki-jsxq .js-cv .js-cv-name {
+    font-size: 0.89vw;
+    min-width: 5.73vw;
+}
+
+.aki-jsxq .js-cv .js-cv-name .cn,
+.aki-jsxq .js-cv .js-cv-name.active .jp {
+    display: block;
+}
+
+.aki-jsxq .js-cv .js-cv-name .jp,
+.aki-jsxq .js-cv .js-cv-name.active .cn {
+    display: none;
+}
+
+.aki-jsxq .js-cv label.lang-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #000;
+    border: 0.16vw solid #717171;
+    width: 3.13vw;
+    height: 1.56vw;
+    border-radius: 0.78vw;
+    font-size: 0.73vw;
+    color: white;
+    cursor: pointer;
+    margin-left: 0.78vw;
+}
+
+.aki-jsxq .js-cv label.lang-btn .huakuai {
+    position: absolute;
+    left: -0.16vw;
+    top: -0.16vw;
+    z-index: 2;
+    width: 1.56vw;
+    height: 1.56vw;
+    border-radius: 50%;
+    background: white;
+    transform: translateX(1.56vw);
+    border: 0.16vw solid #717171;
+    transition: all 0.3s ease;
+}
+
+.aki-jsxq .js-cv label.lang-btn input:checked+.huakuai {
+    transform: translateX(0);
+}
+
+.aki-jsxq .js-cv label.lang-btn input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+
+.aki-jsxq .js-cv label.lang-btn span {
+    display: block;
+    flex: 1;
+    text-align: center;
+}
+
+.aki-jsxq .js-cv .aki-sound {
+    display: none;
+}
+
+.aki-jsxq .js-detail .description {
+    margin-top: 1.30vw;
+    font-size: 1.04vw;
+    line-height: 1.3;
+    min-height: 2.71vw;
+}
+
+.aki-jsxq .js-detail a.zhenying {
+    margin-top: 2.50vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 4.06vw;
+    padding: 0 1.98vw 0 6.77vw;
+    font-size: 1.56vw;
+    border-radius: 2.08vw;
+    color: white;
+    background: #111 url(../images/zhenying-btn-bg.png) 0 0/auto 100%;
+}
+
+.aki-jsxq .js-detail a.zhenying:hover {
+    background-color: var(--themeColor);
+    color: black;
+}
+
+.aki-jsxq .js-detail a.zhenying img {
+    width: 5.11vw;
+    position: absolute;
+    left: 0.94vw;
+    bottom: 0.42vw;
+}
+
+.aki-jsxq .js-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 1.56vw;
+    width: 66.81vw;
+    height: 19.54vw;
+    padding: 2.34vw 0;
+}
+
+.aki-jsxq .js-content img.bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.aki-jsxq .js-content .js-content-zs {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 2.92vw;
+    border-bottom-right-radius: 2.92vw;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.aki-jsxq .js-content .js-content-zs span {
+    display: block;
+    width: 100%;
+    height: 2.34vw;
+}
+
+.aki-jsxq .js-content .content {
+    width: 19.54vw;
+    height: 13.65vw;
+    overflow-y: auto;
+    margin-left: 13.03vw;
+    font-size: 0.78vw;
+    line-height: 1.4;
+    color: white;
+    padding-right: 1.04vw;
+    position: relative;
+    z-index: 10;
+}
+
+.aki-jsxq .js-content .content::-webkit-scrollbar {
+    width: 0.26vw;
+    height: auto;
+    border-radius: 0.26vw;
+}
+
+.aki-jsxq .js-content .content::-webkit-scrollbar-thumb {
+    background: #7f858a;
+    border-radius: 0.26vw;
+}
+
+.aki-jsxq .js-content .content::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 0.26vw;
+}
+
+
+.aki-jsxq .js-content .content p {
+    margin-bottom: 0.78vw;
+}
+
+.aki-jsxq .js-content .content p:last-child {
+    margin-bottom: 0;
+}
+
+.aki-jsxq .js-content img.thumb {
+    position: absolute;
+    left: 0;
+    bottom: -6.10vw;
+    width: 100vw;
+    height: auto;
+    z-index: 5;
+    max-width: none;
+}
+
+
+.aki-small-lbt-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    transform: translateY(5.52vw);
+    transition: all 0.4s ease;
+}
+
+.aki-small-lbt-box:hover {
+    transform: translateY(0);
+}
+
+.aki-small-lbt-box .aki-small-open-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aki-small-lbt-box .aki-small-open-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.82vw;
+    height: 1.98vw;
+    border-radius: 0.78vw 0.78vw 0 0;
+    background: #131313;
+    color: white;
+}
+
+.aki-small-lbt-box .aki-small-open-btn span .iconfont {
+    font-size: 1.25vw;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.aki-small-lbt-box:hover .aki-small-open-btn span .iconfont {
+    opacity: 1;
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper-button-prev,
+.aki-small-lbt-box .aki-small-lbt-content .swiper-button-next {
+    display: block;
+    position: static !important;
+    margin: 0 0.94vw !important;
+    width: 3.28vw;
+    height: 2.34vw;
+    transition: all 0.3s ease;
+    background: url(../images/qhan1.png) no-repeat 0 0/100% 100%;
+    cursor: pointer;
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper-button-prev::after,
+.aki-small-lbt-box .aki-small-lbt-content .swiper-button-next::after {
+    display: none;
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper-button-next {
+    transform: rotate(180deg);
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper-button-prev:hover,
+.aki-small-lbt-box .aki-small-lbt-content .swiper-button-next:hover {
+    background-image: url(../images/qhan2.png);
+}
+
+.aki-small-lbt-box .aki-small-lbt-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5.47vw;
+    background: linear-gradient(to bottom, #131313, #232323);
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper_small {
+    width: 60.55vw;
+    margin: 0 !important;
+    transform: skewX(-25.3deg);
+}
+
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper_small .swiper-slide {
+    transform: skewX(25.3deg);
+    cursor: pointer;
+    position: relative;
+    width: 6.77vw;
+    margin: 0 0.94vw;
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper_small .swiper-slide img{
+    width: 100%;
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper_small .swiper-slide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url(../images/role-active.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.aki-small-lbt-box .aki-small-lbt-content .swiper_small .swiper-slide:hover:after,
+.aki-small-lbt-box .aki-small-lbt-content .swiper_small .swiper-slide-thumb-active::after {
+    opacity: 1;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作經歷時間線</title>
+    <style>
+        .work-timeline {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .work-timeline__container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .work-timeline__container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #4a4a4a;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin-left: -3px;
+        }
+        .work-timeline__item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: calc(100% - 40px);
+            left: 40px;
+            margin-bottom: 20px;
+        }
+        .work-timeline__item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: -52px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .work-timeline__item::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #f2f2f2;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #f2f2f2 transparent transparent;
+        }
+        .work-timeline__content {
+            padding: 20px 30px;
+            background-color: #f2f2f2;
+            position: relative;
+            border-radius: 6px;
+        }
+        .work-timeline__title {
+            margin-top: 0;
+            color: #333;
+        }
+        .work-timeline__company {
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 5px;
+        }
+        .work-timeline__department {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .work-timeline__description {
+            margin-bottom: 0;
+        }
+        @media screen and (max-width: 600px) {
+            .work-timeline__container::after {
+                left: 31px;
+            }
+            .work-timeline__item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+                left: 0;
+            }
+            .work-timeline__item::before {
+                left: 60px;
+                border: medium solid #f2f2f2;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #f2f2f2 transparent transparent;
+            }
+            .work-timeline__item::after {
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="work-timeline">
+        <div class="work-timeline__container">
+            <div class="work-timeline__item">
+                <div class="work-timeline__content">
+                    <h2 class="work-timeline__title">高級軟體工程師</h2>
+                    <div class="work-timeline__company">創新科技有限公司</div>
+                    <div class="work-timeline__department">技術部門</div>
+                    <p class="work-timeline__description">負責設計和開發企業級應用程序，優化現有系統性能，指導初級開發人員。</p>
+                </div>
+            </div>
+            <div class="work-timeline__item">
+                <div class="work-timeline__content">
+                    <h2 class="work-timeline__title">產品經理</h2>
+                    <div class="work-timeline__company">未來科技股份有限公司</div>
+                    <div class="work-timeline__department">產品開發部</div>
+                    <p class="work-timeline__description">領導產品團隊，制定產品策略，與各部門協調以確保產品成功上市。</p>
+                </div>
+            </div>
+            <div class="work-timeline__item">
+                <div class="work-timeline__content">
+                    <h2 class="work-timeline__title">市場分析師</h2>
+                    <div class="work-timeline__company">全球市場研究集團</div>
+                    <div class="work-timeline__department">市場營銷部</div>
+                    <p class="work-timeline__description">進行市場研究，分析競爭對手，提供數據支持以制定市場策略。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

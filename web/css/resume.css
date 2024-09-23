@@ -1,0 +1,226 @@
+   .work-experience {
+
+     line-height: 1.6;
+     color: #333;
+     width: 100%;
+     margin: 0 auto;
+     /* padding: 20px; */
+   }
+
+   .work-experience__list {
+     list-style-type: none;
+     padding: 0;
+   }
+
+   .work-experience__item {
+     background-color: #1E2837;
+     /* border-left: 4px solid #007bff; */
+     border: 0.052vw solid #434C5D;
+     margin-bottom: 20px;
+     padding: 20px;
+     border-radius: 4px;
+     width: 100%;
+     height: 208px;
+   }
+
+   .work-experience__title {
+     margin-top: 0;
+     color: #E4E7EA;
+     font-size: 1.8em;
+   }
+
+   .work-experience__company {
+     font-weight: bold;
+     color: #EB590C;
+     margin-bottom: 5px;
+     font-size: 15px;
+   }
+
+   .work-experience__department {
+     color: #E4E7EA;
+     font-style: italic;
+     margin-bottom: 10px;
+     font-size: 14px;
+   }
+
+   .work-experience__time {
+     font-weight: bold;
+     color: #28a745;
+     margin-bottom: 10px;
+     font-size: 13px;
+   }
+
+   .work-experience__description {
+     margin-bottom: 0;
+   }
+
+   p.work-experience__description {
+     color: #E4E7EA;
+     font-size: 13px;
+   }
+
+
+
+
+
+   .li1-box {
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+
+   .li1-box-item {
+     flex: 0 0 48%;
+     position: relative;
+     min-height: 250px;
+     /* background-color: antiquewhite; */
+     margin-bottom: 40px;
+   }
+
+   .boxitem-line {
+     padding: 30px 40px;
+   }
+
+   .boxitem-line h6 {}
+
+   .boxitem-line h6>span {
+     float: right;
+   }
+
+   .boxitem-line .propress {
+     height: 8px;
+     width: 100%;
+     background-color: transparent;
+     border-radius: 10px;
+     overflow: hidden;
+   }
+
+   .propress>span {
+     width: 0%;
+     transition: width 1s ease-in-out;
+     background-color: #fff;
+     display: inline-block;
+     height: 100%;
+     vertical-align: super;
+     border-radius: 10px;
+   }
+
+
+   h6 {
+     font-size: 13px;
+     margin: 10px 0px;
+   }
+
+   .mecar-title p {
+     margin: 12px;
+   }
+
+   .li2-box {
+     /* min-height: 200px; */
+     padding: 30px 50px;
+     box-sizing: border-box;
+   }
+
+   .li2-box ul {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .li2-box li {
+     flex: 0 0 33%;
+     text-align: left;
+     height: 30px;
+     line-height: 30px;
+     position: relative;
+   }
+
+   .li2-box li:after {
+     position: absolute;
+     content: '';
+     left: -15px;
+     top: 9px;
+     width: 5px;
+     height: 5px;
+     /* background-color: aqua; */
+     border-radius: 50%;
+     border: 3px solid var(--mainColor);
+   }
+
+   .li3-box {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .li3-box>div {
+     flex: 0 0 50%;
+     position: relative;
+     /* margin-bottom: 10px; */
+   }
+
+   .li3-box>div::after {
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     content: '';
+     display: inline-block;
+     width: 5px;
+     height: 100%;
+     background-color: #434D5B;
+   }
+
+   .li3-box .carcontent {
+     min-height: 150px;
+     margin: 0 20px 20px;
+     padding: 30px;
+     box-sizing: content-box;
+     /* width: 80%; */
+     /* background-color: aqua; */
+   }
+
+   .li3-box .li3box-pro {
+     position: relative;
+   }
+
+   .li3box-pro:hover .carprogress {
+     opacity: 1;
+   }
+
+   .li3-box .carprogress {
+     transition: all .2s ease-in-out;
+     position: absolute;
+     right: -6px;
+     z-index: 1;
+     top: 10px;
+     width: 18px;
+     height: 18px;
+     background-color: var(--headerCOlor);
+     border-radius: 50%;
+     box-sizing: border-box;
+     border: 5px solid #EB590C;
+     opacity: .5;
+   }
+
+
+   /* 手机*/
+   @media screen and (max-width: 550px) {
+     .content-li {
+       display: block;
+     }
+
+     .li1-box {
+       display: block;
+     }
+
+     .li2-box ul {
+       display: block;
+     }
+
+     .li3-box {
+       display: block;
+     }
+
+     .li2-box li {
+       width: 100%;
+     }
+   }

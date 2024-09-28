@@ -7,6 +7,7 @@
     user-select: none;
     /* 禁止拖拽 */
     -webkit-user-drag: none;
+
 }
 
 /* 
@@ -69,10 +70,11 @@ html {
     position: relative;
     line-height: 1;
     scroll-behavior: smooth;
-    --themeColor: #E04E65;
+    --themeColor: #d8fa00;
     --themeColor2: #000000;
-    background: #1A1D24;
+    background: #0B0F19;
     font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu, sans-serif;
+    /* letter-spacing: 0.104vw; */
 }
 
 /* 滑动条美化 */
@@ -603,7 +605,7 @@ a.cover-btn {
     border: 0.31vw solid #767678;
     background: #121212;
     font-size: 0.94vw;
-    color: #d6d6d6;
+    color: #E4E7EA;
     font-weight: bold;
 }
 
@@ -613,7 +615,7 @@ a.cover-btn .iconfont {
 }
 
 a.cover-btn:hover {
-    background: white;
+    background: #E4E7EA;
     color: #121212;
     border-color: #121212;
 }

@@ -1,54 +1,182 @@
-.li1-box{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.home {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.646vw 10% 0;
 }
 
-.li1-box-item{
-  overflow: hidden;
-  flex: 0 0 48%;
-  position: relative;
-  /* min-height: 300px; */
-  margin-bottom: 40px;
-}
-.li1-box-item:hover img{
-  transform: scale(1);
-}
-.li1-box-item:hover .boxitem-title{
-  bottom:0px;
-  opacity: 1;
-  transform: scale(1.2);
-}
-.li1-box-item>img{
-  /* width: 100%; */
-  height: 100%;
-  transform: scale(1.1);
-  transition: all .3s ease-in-out;
-}
-.li1-box-item .boxitem-title{
-  position: absolute;
-  bottom:-75px;
-  left:0px;
-  right: 0px;
-  height: 75px;
-  text-align: center;
-  background-color: var(--headerhover);
-  color: var(--headerFont);
-  transition: all .3s ease-in-out;
-  transform: scale(1);
-  font-size: 12px;
-}
-.boxitem-title h6{
-  font-size: 12px;
-  /* display: inline-block; */
-  margin: 15px 0 8px;
+.home-content {
+    max-width: 31.25vw;
 }
 
+.home-content h3 {
+    font-size: 1.667vw;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
 
-  /* 手机*/
-  @media screen and (max-width: 550px) {
-    .li1-box-item{
-      flex: auto;
-      min-height: auto;
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 1.5625vw;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span {
+    color: #b7b2a9;
+}
+
+.home-content h1 {
+    font-size: 2.917vw;
+    font-weight: 700;
+    margin: -0.15625vw 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p {
+    font-size: 0.833vw;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.7s;
+}
+
+.home-img img {
+    max-width: 23.4375vw;
+    border-radius: 50%;
+    margin-right: -1.042vw;
+    box-shadow: 0 0 1.042vw #b7b2a9;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    border: #F24B0F;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.083vw;
+    height: 3.083vw;
+    background: transparent;
+    border: 0.104vw solid #414A58;
+    border-radius: 50%;
+    color: #414A58;
+    font-size: 2.042vw;
+    text-decoration: none;
+    margin: 1.5625vw 0.78125vw 1.5625vw 0;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+.social-media a:hover {
+    background: #E4E7EA;
+    color: #1f242d;
+    box-shadow: 0 0 1.042vw #E4E7EA;
+}
+
+/* .btn {
+    display: inline-block;
+    padding: 0.625vw 1.458vw;
+    background: #b7b2a9;
+    text-decoration: none;
+    border-radius: 2.083vw;
+    box-shadow: 0 0 0.521vw #b7b2a9;
+    font-size: 0.833vw;
+    color: #1f242d;
+    letter-spacing: 0.052vw;
+    font-weight: 600;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 1.042vw #b7b2a9;
+}
+
+.btn:active {
+    background: none;
+    color: #b7b2a9;
+    border: 0.104vw solid #b7b2a9;
+} */
+
+/* 动画 */
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-5.208vw);
     }
-  }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(5.208vw);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(5.208vw);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-5.208vw);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1.25vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

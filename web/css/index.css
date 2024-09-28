@@ -1,3 +1,8 @@
+body {
+    background: #0B0F19;
+    color: #E4E7EA;
+}
+
 .index-banner {
     position: relative;
 }
@@ -87,8 +92,8 @@
 
 .index-banner .app-down {
     position: absolute;
-    bottom: 16.68vw;
-    right: 2.61vw;
+    bottom: 4.5vw;
+    right: 48vw;
     /* width: 15.63vw; */
     display: flex;
     flex-wrap: wrap;
@@ -135,22 +140,8 @@
 
 }
 
-.grow1 img {
-    flex: shrink 0;
-    height: 30.74vw;
-    max-width: 100%;
-    width: 100%;
-    border-radius: 100px;
 
 
-}
-
-.grow2 {
-    /* background: #4702c9; */
-    flex-grow: 1;
-    height: 30.74vw;
-    width: 45vw;
-}
 
 .index-content-title {
     margin-top: 8vw;
